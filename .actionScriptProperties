@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<actionScriptProperties mainApplicationPath="PlayerDC.as" projectUUID="8cbd9fb9-70a3-4a95-8cef-e5af736b0582" version="6">
+  <compiler additionalCompilerArguments="" autoRSLOrdering="false" copyDependentFiles="true" flexSDK="Flex 3.4" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="false" verifyDigests="false" warn="true">
+    <compilerSourcePath/>
+    <libraryPath defaultLinkType="0"/>
+    <sourceAttachmentPath/>
+  </compiler>
+  <applications>
+    <application path="PlayerDC.as"/>
+  </applications>
+  <modules/>
+  <buildCSSFiles/>
+</actionScriptProperties>
