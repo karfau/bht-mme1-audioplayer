@@ -43,7 +43,7 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <!-- example: <element path="..." /> -->
+    <element path="lib\player.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

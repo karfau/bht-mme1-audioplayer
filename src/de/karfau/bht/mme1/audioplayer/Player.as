@@ -1,5 +1,6 @@
 package de.karfau.bht.mme1.audioplayer
 {
+	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
 	import icons.Repeat;
@@ -13,12 +14,22 @@ package de.karfau.bht.mme1.audioplayer
 		
 		public function Player()
 		{
+			if(this.stage){ 
+				init();
+			}else{ 
+				addEventListener(Event.ADDED_TO_STAGE, init);
+			}
+		}
+		
+		private function init(e:Event = null):void 
+		{
+			removeEventListener(Event.ADDED_TO_STAGE, init);
+			// entry point
 			this.shuffleBtn.icon = new Shuffle();
 			this.repeatBtn.icon = new Repeat();
 			//repeatBtn.selected = _repeat;
-			//repeatBtn.addEventListener(MouseEvent.CLICK,handleOptionClick);
+			repeatBtn.addEventListener(MouseEvent.CLICK,handleOptionClick);
 		}
-		
 		
 		private function handleOptionClick(event:MouseEvent):void{
 			switch(event.target){
